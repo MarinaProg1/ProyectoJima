@@ -17,3 +17,11 @@ C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\bin\Debug\CapaDa
 C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\bin\Debug\CapaEntidades.pdb
 C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\bin\Debug\CapaNegocio.pdb
 C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\bin\Debug\CapaDatos.pdb
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormCategoria.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormCliente.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormProducto.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormProveedores.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormReportes.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUsuario.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormVenta.resources
+C:\Users\marin\source\repos\SistemaGestionJima\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormCompras.resources

@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaEntidades;
 using CapaNegocio;
+using FontAwesome.Sharp;
 
 namespace WindowsFormsApp1
 {
     public partial class Inicio : Form
     {
         private static Usuario _usuarioActual;
+        private static IconMenuItem _menuActivo = null;
+        private static Form _formularioActivo = null;
         public Inicio(Usuario objUsuario)
         {
             _usuarioActual = objUsuario;    
@@ -24,6 +27,65 @@ namespace WindowsFormsApp1
         private void Inicio_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = _usuarioActual.NombreCompleto;
+        }
+
+        private void AbrirFormulario(IconMenuItem menu, Form formulario) 
+        {
+            if (_menuActivo != null) 
+            { 
+                _menuActivo.BackColor = Color.White;
+            }
+            menu.BackColor = Color.Tomato;
+            _menuActivo = menu;
+
+            if (_formularioActivo != null)
+            {
+                _formularioActivo.Close();
+            }
+            _formularioActivo = formulario; 
+            formulario.TopLevel = false;    
+            formulario.FormBorderStyle = FormBorderStyle.None;  
+            formulario.Dock = DockStyle.Fill;
+            formulario.BackColor = Color.Tomato;
+            
+            contenedor.Controls.Add(formulario); 
+            formulario.Show();
+
+        }
+
+        private void menuUsuario_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem) sender, new FormUsuario());  
+        }
+
+        private void subMenuCategoria_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuMantenedor, new FormCategoria());
+        }
+
+        private void subMenuProducto_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuMantenedor, new FormProducto());
+        }
+
+        private void subMenuRegistrar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuVentas, new FormVenta());
+        }
+
+        private void subMenuVerDetalle_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuVentas, new FormDetalleVenta());
+        }
+
+        private void subMenuRegistarComp_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuCompra, new FormCompras());
+        }
+
+        private void subMenuVerDetComp_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuCompra, new FormDetalleCompra());
         }
     }
 }

@@ -39,9 +39,15 @@
             this.menuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.contenedor = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.subMenuCategoria = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuProducto = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuRegistrar = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuVerDetalle = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuRegistarComp = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuVerDetComp = new FontAwesome.Sharp.IconMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,23 +81,30 @@
             this.menuUsuario.Size = new System.Drawing.Size(80, 69);
             this.menuUsuario.Text = "Usuarios";
             this.menuUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuUsuario.Click += new System.EventHandler(this.menuUsuario_Click);
             // 
             // menuMantenedor
             // 
             this.menuMantenedor.AutoSize = false;
+            this.menuMantenedor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuCategoria,
+            this.subMenuProducto});
             this.menuMantenedor.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.menuMantenedor.IconColor = System.Drawing.Color.Black;
             this.menuMantenedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuMantenedor.IconSize = 50;
             this.menuMantenedor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuMantenedor.Name = "menuMantenedor";
-            this.menuMantenedor.Size = new System.Drawing.Size(80, 69);
+            this.menuMantenedor.Size = new System.Drawing.Size(122, 69);
             this.menuMantenedor.Text = "Mantenedor";
             this.menuMantenedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // menuVentas
             // 
             this.menuVentas.AutoSize = false;
+            this.menuVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuRegistrar,
+            this.subMenuVerDetalle});
             this.menuVentas.IconChar = FontAwesome.Sharp.IconChar.Tags;
             this.menuVentas.IconColor = System.Drawing.Color.Black;
             this.menuVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -105,6 +118,9 @@
             // menuCompra
             // 
             this.menuCompra.AutoSize = false;
+            this.menuCompra.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuRegistarComp,
+            this.subMenuVerDetComp});
             this.menuCompra.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.menuCompra.IconColor = System.Drawing.Color.Black;
             this.menuCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -190,23 +206,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Sistema de Gestión Jima";
             // 
-            // panel1
+            // contenedor
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 131);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 319);
-            this.panel1.TabIndex = 3;
+            this.contenedor.BackColor = System.Drawing.Color.White;
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contenedor.ForeColor = System.Drawing.Color.White;
+            this.contenedor.Location = new System.Drawing.Point(0, 131);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(800, 319);
+            this.contenedor.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Tomato;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(669, 27);
+            this.label2.Location = new System.Drawing.Point(605, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 4;
@@ -217,11 +233,71 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Tomato;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(728, 27);
+            this.lblUsuario.Location = new System.Drawing.Point(664, 27);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(61, 15);
             this.lblUsuario.TabIndex = 5;
             this.lblUsuario.Text = "lblusuario";
+            // 
+            // subMenuCategoria
+            // 
+            this.subMenuCategoria.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuCategoria.IconColor = System.Drawing.Color.Black;
+            this.subMenuCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuCategoria.Name = "subMenuCategoria";
+            this.subMenuCategoria.Size = new System.Drawing.Size(180, 22);
+            this.subMenuCategoria.Text = "Categoria";
+            this.subMenuCategoria.Click += new System.EventHandler(this.subMenuCategoria_Click);
+            // 
+            // subMenuProducto
+            // 
+            this.subMenuProducto.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuProducto.IconColor = System.Drawing.Color.Black;
+            this.subMenuProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuProducto.Name = "subMenuProducto";
+            this.subMenuProducto.Size = new System.Drawing.Size(180, 22);
+            this.subMenuProducto.Text = "Producto";
+            this.subMenuProducto.Click += new System.EventHandler(this.subMenuProducto_Click);
+            // 
+            // subMenuRegistrar
+            // 
+            this.subMenuRegistrar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuRegistrar.IconColor = System.Drawing.Color.Black;
+            this.subMenuRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuRegistrar.Name = "subMenuRegistrar";
+            this.subMenuRegistrar.Size = new System.Drawing.Size(180, 22);
+            this.subMenuRegistrar.Text = "Registrar";
+            this.subMenuRegistrar.Click += new System.EventHandler(this.subMenuRegistrar_Click);
+            // 
+            // subMenuVerDetalle
+            // 
+            this.subMenuVerDetalle.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuVerDetalle.IconColor = System.Drawing.Color.Black;
+            this.subMenuVerDetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuVerDetalle.Name = "subMenuVerDetalle";
+            this.subMenuVerDetalle.Size = new System.Drawing.Size(180, 22);
+            this.subMenuVerDetalle.Text = "Ver Detalle";
+            this.subMenuVerDetalle.Click += new System.EventHandler(this.subMenuVerDetalle_Click);
+            // 
+            // subMenuRegistarComp
+            // 
+            this.subMenuRegistarComp.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuRegistarComp.IconColor = System.Drawing.Color.Black;
+            this.subMenuRegistarComp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuRegistarComp.Name = "subMenuRegistarComp";
+            this.subMenuRegistarComp.Size = new System.Drawing.Size(180, 22);
+            this.subMenuRegistarComp.Text = "Registrar";
+            this.subMenuRegistarComp.Click += new System.EventHandler(this.subMenuRegistarComp_Click);
+            // 
+            // subMenuVerDetComp
+            // 
+            this.subMenuVerDetComp.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuVerDetComp.IconColor = System.Drawing.Color.Black;
+            this.subMenuVerDetComp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuVerDetComp.Name = "subMenuVerDetComp";
+            this.subMenuVerDetComp.Size = new System.Drawing.Size(180, 22);
+            this.subMenuVerDetComp.Text = "Ver Detalle";
+            this.subMenuVerDetComp.Click += new System.EventHandler(this.subMenuVerDetComp_Click);
             // 
             // Inicio
             // 
@@ -230,7 +306,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menuTitulo);
@@ -260,9 +336,15 @@
         private FontAwesome.Sharp.IconMenuItem menuProveedor;
         private FontAwesome.Sharp.IconMenuItem menuReporte;
         private FontAwesome.Sharp.IconMenuItem menuAcercaDe;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel contenedor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblUsuario;
+        private FontAwesome.Sharp.IconMenuItem subMenuCategoria;
+        private FontAwesome.Sharp.IconMenuItem subMenuProducto;
+        private FontAwesome.Sharp.IconMenuItem subMenuRegistrar;
+        private FontAwesome.Sharp.IconMenuItem subMenuVerDetalle;
+        private FontAwesome.Sharp.IconMenuItem subMenuRegistarComp;
+        private FontAwesome.Sharp.IconMenuItem subMenuVerDetComp;
     }
 }
 
