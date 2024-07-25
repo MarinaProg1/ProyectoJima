@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
         {
             if (_menuActivo != null) 
             { 
-                _menuActivo.BackColor = Color.White;
+                _menuActivo.BackColor = Color.Aqua;
             }
             menu.BackColor = Color.Tomato;
             _menuActivo = menu;

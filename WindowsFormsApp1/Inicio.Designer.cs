@@ -53,7 +53,7 @@
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menu.BackColor = System.Drawing.Color.Aqua;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuUsuario,
             this.menuMantenedor,
