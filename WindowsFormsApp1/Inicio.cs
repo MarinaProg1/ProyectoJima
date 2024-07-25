@@ -87,5 +87,20 @@ namespace WindowsFormsApp1
         {
             AbrirFormulario(menuCompra, new FormDetalleCompra());
         }
+
+        private void menuCliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, new FormCliente());
+        }
+
+        private void menuProveedor_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, new FormProveedores());
+        }
+
+        private void menuReporte_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, new FormReportes());
+        }
     }
 }
