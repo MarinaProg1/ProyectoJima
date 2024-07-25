@@ -1,0 +1,11 @@
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaNegocio\obj\Debug\CapaNegocio.pdb

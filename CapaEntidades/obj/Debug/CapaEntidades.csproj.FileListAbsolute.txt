@@ -1,0 +1,6 @@
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\marin\source\repos\SistemaGestionJima\CapaEntidades\obj\Debug\CapaEntidades.pdb
