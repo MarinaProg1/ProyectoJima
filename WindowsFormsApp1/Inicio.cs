@@ -26,6 +26,18 @@ namespace WindowsFormsApp1
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            List<Permiso> listPermiso = new CN_Permiso().Listar(_usuarioActual.IdUsuario); 
+            
+           foreach(IconMenuItem iconMenu in menu.Items) 
+            {
+                bool encontrado = listPermiso.Any(m => m.NombreMenu == iconMenu.Name);
+                
+                if (encontrado) 
+                {
+                 iconMenu.Visible = false;  
+                }
+            }
+
             lblUsuario.Text = _usuarioActual.NombreCompleto;
         }
 
