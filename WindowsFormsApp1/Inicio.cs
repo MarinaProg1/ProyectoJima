@@ -18,9 +18,17 @@ namespace WindowsFormsApp1
         private static Usuario _usuarioActual;
         private static IconMenuItem _menuActivo = null;
         private static Form _formularioActivo = null;
-        public Inicio(Usuario objUsuario)
+        public Inicio(Usuario objUsuario = null)
         {
-            _usuarioActual = objUsuario;    
+            if (objUsuario == null) _usuarioActual = new Usuario()
+            {
+                NombreCompleto = "Admi Predefinido",
+                IdUsuario = 1
+            };
+            else
+            {
+                _usuarioActual = objUsuario;
+            }   
             InitializeComponent();
         }
 
@@ -32,7 +40,7 @@ namespace WindowsFormsApp1
             {
                 bool encontrado = listPermiso.Any(m => m.NombreMenu == iconMenu.Name);
                 
-                if (encontrado) 
+                if (encontrado == false) 
                 {
                  iconMenu.Visible = false;  
                 }

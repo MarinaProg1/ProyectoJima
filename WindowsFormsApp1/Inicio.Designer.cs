@@ -65,7 +65,7 @@
             this.menuAcercaDe});
             this.menu.Location = new System.Drawing.Point(0, 58);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 73);
+            this.menu.Size = new System.Drawing.Size(1075, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -141,7 +141,7 @@
             this.subMenuRegistrar.IconColor = System.Drawing.Color.Black;
             this.subMenuRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.subMenuRegistrar.Name = "subMenuRegistrar";
-            this.subMenuRegistrar.Size = new System.Drawing.Size(180, 22);
+            this.subMenuRegistrar.Size = new System.Drawing.Size(129, 22);
             this.subMenuRegistrar.Text = "Registrar";
             this.subMenuRegistrar.Click += new System.EventHandler(this.subMenuRegistrar_Click);
             // 
@@ -151,7 +151,7 @@
             this.subMenuVerDetalle.IconColor = System.Drawing.Color.Black;
             this.subMenuVerDetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.subMenuVerDetalle.Name = "subMenuVerDetalle";
-            this.subMenuVerDetalle.Size = new System.Drawing.Size(180, 22);
+            this.subMenuVerDetalle.Size = new System.Drawing.Size(129, 22);
             this.subMenuVerDetalle.Text = "Ver Detalle";
             this.subMenuVerDetalle.Click += new System.EventHandler(this.subMenuVerDetalle_Click);
             // 
@@ -177,7 +177,7 @@
             this.subMenuRegistarComp.IconColor = System.Drawing.Color.Black;
             this.subMenuRegistarComp.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.subMenuRegistarComp.Name = "subMenuRegistarComp";
-            this.subMenuRegistarComp.Size = new System.Drawing.Size(180, 22);
+            this.subMenuRegistarComp.Size = new System.Drawing.Size(129, 22);
             this.subMenuRegistarComp.Text = "Registrar";
             this.subMenuRegistarComp.Click += new System.EventHandler(this.subMenuRegistarComp_Click);
             // 
@@ -187,7 +187,7 @@
             this.subMenuVerDetComp.IconColor = System.Drawing.Color.Black;
             this.subMenuVerDetComp.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.subMenuVerDetComp.Name = "subMenuVerDetComp";
-            this.subMenuVerDetComp.Size = new System.Drawing.Size(180, 22);
+            this.subMenuVerDetComp.Size = new System.Drawing.Size(129, 22);
             this.subMenuVerDetComp.Text = "Ver Detalle";
             this.subMenuVerDetComp.Click += new System.EventHandler(this.subMenuVerDetComp_Click);
             // 
@@ -253,7 +253,7 @@
             this.menuTitulo.Location = new System.Drawing.Point(0, 0);
             this.menuTitulo.Name = "menuTitulo";
             this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(800, 58);
+            this.menuTitulo.Size = new System.Drawing.Size(1075, 58);
             this.menuTitulo.TabIndex = 1;
             this.menuTitulo.Text = "menuStrip2";
             // 
@@ -277,7 +277,7 @@
             this.contenedor.ForeColor = System.Drawing.Color.White;
             this.contenedor.Location = new System.Drawing.Point(0, 131);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(800, 319);
+            this.contenedor.Size = new System.Drawing.Size(1075, 500);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -306,7 +306,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1075, 631);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contenedor);
