@@ -1,33 +1,75 @@
-*.suo
-*.backup
-*.user
-*.dbmdl
-*.pptx
-*.psess
-*.orig
-*.xml
-*.~vsd
-*.zip
-*.sublime-project
-*.sublime-workspace
-*.exe
-*.avi
-*.mp4
-*.mov
-*.rar
-*.mdf
-*.ldf
-**/nuspec.list
-**/packages/
-**/.sass-cache/
-**/node_modules/
-**/bower_components/
-*/Performance/*TestResults.txt
-**/bin
-**/obj
-**/*.log.1
-**/*.log.*
-*.log
-*.db
+# Visual Studio
 .vs/
-Publish/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Aa]ssets/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Publish output
+publish/
+*.publish.xml
+
+# MAUI
+**/bin/
+**/obj/
+**/platforms/
+**/resources/
+**/styles/
+**/wwwroot/
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+*.dbproj.user
+*.jfm
+*.jrs
+
+# Other
+*.pdb
+*.mdb
+*.cache
+*.ilk
+*.sdf
+*.db
+*.exe
+*.dll
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore files for all platforms
+*.apk
+*.ipa
+
+# Ignore folders for all platforms
+*.vs/
+*.user/
+*.suo/
+*.ncb/
+*.sdf/
+*.opensdf/
+*.sln.ide/
+*.sln.xcuserdat/
